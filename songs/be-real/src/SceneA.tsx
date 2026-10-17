@@ -1,9 +1,9 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
-import { lines, Word } from "../lyrics/data";
-import { pulse } from "../lyrics/beat";
-import { clamp01, easeInOut, easeOut, useOnset, useT } from "../lyrics/motion";
-import { accentAt, COL_W, FONT_HERO, HERO, HERO_KEYS, INK } from "../v2/tokens";
+import { lines, Word } from "./data";
+import { pulse } from "./beat";
+import { clamp01, easeInOut, easeOut, useOnset, useT } from "./motion";
+import { accentAt, COL_W, FONT_HERO, HERO, HERO_KEYS, INK } from "./tokens";
 import { HeroX, OnlyOn, Plane, sum, UI, UIHERO, win } from "./kit";
 
 /* =============== S1 — open stage, lines 1-4 (centered, so nothing hangs on one side) =============== */

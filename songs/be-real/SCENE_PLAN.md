@@ -1,8 +1,8 @@
-# SCENE_PLAN: "Real" (landscape, v3)
+# SCENE_PLAN: "BE REAL" (landscape, v3)
 
-Status: approved by the user through `out/v3d-landscape.mp4`. Replaces the old vertical plan (18 unrelated scenes). Style rules live in `LYRIC_VIDEO_STYLE_GUIDE.md` section 9.
+Status: approved by the user through `songs/be-real/out/v3d-landscape.mp4`. Replaces the old vertical plan (18 unrelated scenes). Style rules live in `LYRIC_VIDEO_STYLE_GUIDE.md` (project root) section 9. Everything for this song lives in `songs/be-real/`.
 
-Source of truth: `assets/real_lyrics_aligned.json` (hand-edited by the user, read-only, imported by `src/lyrics/data.ts`). Audio: `assets/real_IBALsS5z.m4a` (copy in `public/`), 57.21 s, used once, untouched. Canvas 1920x1080, 30 fps. Composition id `LyricV3` (`src/v3/LyricV3.tsx`, registered in `src/Root.tsx`). Beat data from the instrumental stem (`src/lyrics/beats.ts`, about 60.6 BPM) drives only subtle pulses.
+Source of truth: `songs/be-real/assets/real_lyrics_aligned.json` (hand-edited by the user, read-only, imported by `src/data.ts`). Audio: `songs/be-real/assets/real_IBALsS5z.m4a` (imported directly, no `public/` copy), 57.21 s, used once, untouched. Canvas 1920x1080, 30 fps. Composition id `BeReal` (`src/BeReal.tsx`, registered in the root `src/Root.tsx`). Beat data from the instrumental stem (`src/beats.ts`, about 60.6 BPM) drives only subtle pulses.
 
 ## Through-line
 
@@ -46,15 +46,16 @@ Persistent layers on every scene: accent glow, drifting soft orbs, slow dashed r
 | 22 | mabuti masama man ay di bale na | masama |
 | 23 | basta tunay ka | tunay, ka |
 
-Hero indexes are in `HERO_KEYS` (`src/v2/tokens.ts`). Lines are shown on two rows at most (body row, then hero plus trailing words).
+Hero indexes are in `HERO_KEYS` (`src/tokens.ts`). Lines are shown on two rows at most (body row, then hero plus trailing words).
 
-## Code map
+## Folder map (all inside `songs/be-real/`)
 
-- `src/v3/kit.tsx`: type sizes, `Stage` (camera-move transitions), `Backdrop`, `Wd`/`HeroX`/`HeroG`, `Plane` (line layout), `MemeCard`.
-- `src/v3/SceneA.tsx`: S1 stage, S2 chat. `SceneB.tsx`: S3 carousel, S4 tunnel. `SceneC.tsx`: S5 notifications, S6 finale.
-- `src/v3/LyricV3.tsx`: stage windows and audio. Restyle one scene = edit that scene's component; retime a transition = edit its `Stage` props.
-- Shared: `src/lyrics/` (data, motion, beats) and `src/v2/` (tokens, `Extrude`). Older attempts (`src/lyrics`, `src/proto`, `src/v2`) are kept, not used by v3.
-- Renders: `out/v3-landscape.mp4`, `v3b`, `v3c`, `v3d` (latest approved). Add a new letter for each revision.
+- `assets/`: audio, `real_lyrics_aligned.json` (read-only), template, lyrics text, reference video, the two cat memes.
+- `src/`: `BeReal.tsx` (stage windows, audio, fades), `kit.tsx` (type sizes, `Stage` camera-move transitions, `Backdrop`, `Wd`/`HeroX`/`HeroG`, `Plane`, `MemeCard`), `SceneA.tsx` (S1 stage, S2 chat), `SceneB.tsx` (S3 carousel, S4 tunnel), `SceneC.tsx` (S5 notifications, S6 finale), `data.ts`, `tokens.ts` (`HERO_KEYS`, accents), `Hero.tsx` (`Extrude`), `motion.ts`, `beat.ts`, `beats.ts`.
+- `out/`: final renders (`v3c`, `v3d` = latest approved; new revisions get a new name), `stills/` (QA frames), `qa-old/` (frames from earlier attempts).
+- `archive/`: older attempts (vertical version, prototype, v2, check videos) and their `public/` JSON copies. Kept for reference, **not compiled** (excluded in `tsconfig.json`) and not runnable as is.
+- Restyle one scene = edit that scene's component; retime a transition = edit its `Stage` props in `BeReal.tsx`.
+- Render: `npm run render:be-real` (writes `songs/be-real/out/be-real.mp4`) or `npx remotion render src/index.ts BeReal songs/be-real/out/<name>.mp4`.
 
 ## Accent colours
 
@@ -70,6 +71,6 @@ yellow `#ffd84d` (S1, S2, S6), coral `#ff7a6b` (S3), blue `#7aa7ff` (S4), teal `
 ## Known limits
 
 - Fonts are Segoe UI (Windows only); other machines will render differently.
-- The two cat memes are low resolution (370 px and 400 px) and are shown at about 620 px, so they look soft. Replace the files in `public/cat1.jpg` and `public/cat2.jpg` if larger versions exist.
+- The two cat memes are low resolution (370 px and 400 px) and are shown at about 620 px, so they look soft. Replace `assets/cat_meme_agree.jpg` and `assets/caat_meme_agree2.jpg` if larger versions exist.
 - Motion, transition timing and audio sync were verified from rendered still frames only. They need the user's review by watching.
 - Messenger "Notes" bubble was not built.

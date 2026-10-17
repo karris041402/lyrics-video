@@ -11,6 +11,12 @@
 
 Welcome to your Remotion project!
 
+## Lyric video workspace
+
+One folder per song in `songs/<song-name>/` (code in `src/`, plus `assets/`, `out/`, `archive/`, `SCENE_PLAN.md`). Style rules: `LYRIC_VIDEO_STYLE_GUIDE.md`.
+
+Current song: `songs/be-real/` (composition id `BeReal`).
+
 ## Commands
 
 **Install Dependencies**
@@ -28,7 +34,7 @@ npm run dev
 **Render video**
 
 ```console
-npx remotion render
+npm run render:be-real
 ```
 
 **Upgrade Remotion**

@@ -1,9 +1,11 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
-import { lines } from "../lyrics/data";
-import { pulse } from "../lyrics/beat";
-import { clamp01, easeInOut, useT } from "../lyrics/motion";
-import { accentAt, COL_W, COL_X, CH } from "../v2/tokens";
+import { lines } from "./data";
+import { pulse } from "./beat";
+import { clamp01, easeInOut, useT } from "./motion";
+import { accentAt, COL_W, COL_X, CH } from "./tokens";
+import cat1 from "../assets/cat_meme_agree.jpg";
+import cat2 from "../assets/caat_meme_agree2.jpg";
 import { MemeCard, Plane, sum, win } from "./kit";
 
 /* =============== S3 — carousel, lines 9-14 (rap-fast: the wheel turns to each line) =============== */
@@ -39,7 +41,7 @@ export const S3: React.FC = () => {
           if (o <= 0.01) return null;
           return (
             <div key={l.id} style={{ position: "absolute", inset: 0, transform: `rotateY(${k * STEP}deg) translateZ(${R}px)`, opacity: o >= 0.999 ? undefined : o }}>
-              <Plane line={l} accent={accent} ghost={0.2} extra={l.index === 14 ? <MemeCard src="cat1.jpg" w={l.words[1]} left={900} top={230} size={620} tilt={5} /> : undefined} />
+              <Plane line={l} accent={accent} ghost={0.2} extra={l.index === 14 ? <MemeCard src={cat1} w={l.words[1]} left={900} top={230} size={620} tilt={5} /> : undefined} />
             </div>
           );
         })}
@@ -97,7 +99,7 @@ export const S4: React.FC = () => {
           if (o <= 0.01) return null;
           return (
             <div key={l.id} style={{ position: "absolute", inset: 0, transform: `translate3d(${k * SX}px, 0, ${-k * D}px)`, opacity: o >= 0.999 ? undefined : o }}>
-              <Plane line={l} accent={accent} ghost={0.12} extra={l.index === 18 ? <MemeCard src="cat2.jpg" w={l.words[2]} left={900} top={230} size={620} tilt={-5} /> : undefined} />
+              <Plane line={l} accent={accent} ghost={0.12} extra={l.index === 18 ? <MemeCard src={cat2} w={l.words[2]} left={900} top={230} size={620} tilt={-5} /> : undefined} />
             </div>
           );
         })}

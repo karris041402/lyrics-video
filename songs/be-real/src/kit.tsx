@@ -1,10 +1,10 @@
 import React from "react";
-import { AbsoluteFill, Img, staticFile } from "remotion";
-import { Line, Word } from "../lyrics/data";
-import { pulse } from "../lyrics/beat";
-import { clamp01, easeInOut, easeOut, useOnset, useT } from "../lyrics/motion";
-import { Extrude } from "../v2/Hero";
-import { accentAt, BG, BODY, CH, COL_W, CW, FONT_BODY, FONT_HERO, HERO, HERO_KEYS, INK } from "../v2/tokens";
+import { AbsoluteFill, Img } from "remotion";
+import { Line, Word } from "./data";
+import { pulse } from "./beat";
+import { clamp01, easeInOut, easeOut, useOnset, useT } from "./motion";
+import { Extrude } from "./Hero";
+import { accentAt, BG, BODY, CH, COL_W, CW, FONT_BODY, FONT_HERO, HERO, HERO_KEYS, INK } from "./tokens";
 
 /** Type scale. World text: BODY/HERO (v2). Text inside phone UI: UI/UIHERO. Finale hero is the single exception. */
 export const UI = 52;
@@ -191,7 +191,7 @@ export const MemeCard: React.FC<{ src: string; w: Word; left: number; top: numbe
   return (
     <div style={{ position: "absolute", left, top: top + bob + (1 - k) * 120, width: size, height: size, transform: `perspective(1000px) rotateY(${-16 + Math.sin(t * 0.8) * 5 + (1 - p) * 60}deg) rotateZ(${tilt + (1 - k) * -10}deg) scale(${0.55 + 0.45 * Math.min(p, 1.08)})`, opacity: clamp01(p * 2.5), transformOrigin: "50% 50%" }}>
       <div style={{ position: "absolute", inset: -14, borderRadius: 54, background: "linear-gradient(160deg,#1f8bff,#9a4dff)", opacity: 0.55, filter: "blur(30px)" }} />
-      <Img src={staticFile(src)} style={{ position: "relative", width: size, height: size, objectFit: "cover", borderRadius: 40, border: "6px solid #f5f6fa", boxShadow: "0 30px 70px rgba(0,0,0,0.55)" }} />
+      <Img src={src} style={{ position: "relative", width: size, height: size, objectFit: "cover", borderRadius: 40, border: "6px solid #f5f6fa", boxShadow: "0 30px 70px rgba(0,0,0,0.55)" }} />
       <div style={{ position: "absolute", right: -14, bottom: -14, width: 44, height: 44, borderRadius: 44, background: "linear-gradient(135deg,#7aa7ff,#b58cff)", border: "4px solid #0d0f1a", transform: `scale(${easeOut(clamp01((since - 0.5) / 0.25))})` }} />
     </div>
   );

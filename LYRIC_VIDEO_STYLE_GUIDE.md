@@ -37,18 +37,20 @@ These are observations from representative frames; exact timing, transitions, an
 
 ## 4. Inputs required per song
 
-- `assets/song.mp3` or `.wav`: full original track, retained as the final soundtrack.
-- `assets/lyrics.json`: timestamped lyrics aligned to the original track. Prefer **word-level** timing, but line-level timing is a valid start. Times are seconds from the start of the original audio.
-- `assets/visuals/`: optional user-curated images, video clips, textures and overlays.
+All paths below are relative to the song folder `songs/<song-name>/` (see 9.10).
+
+- `assets/<song>.mp3`, `.m4a` or `.wav`: full original track, retained as the final soundtrack.
+- `assets/<song>_lyrics_aligned.json`: timestamped lyrics aligned to the original track. Prefer **word-level** timing, but line-level timing is a valid start. Times are seconds from the start of the original audio.
+- `assets/` (or `assets/visuals/`): optional user-curated images, video clips, textures and overlays.
 - `assets/reference.mp4`: optional per-song visual reference.
-- `SONG_BRIEF.md`: song-specific mood, preferred colors/footage, forbidden elements, canvas dimensions, ending treatment, any special direction.
+- `SONG_BRIEF.md` (in the song folder): song-specific mood, preferred colors/footage, forbidden elements, canvas dimensions, ending treatment, any special direction.
 
 ### Suggested `lyrics.json` format
 
 ```json
 {
   "version": 1,
-  "audioFile": "assets/song.mp3",
+  "audioFile": "assets/<song>.mp3",
   "language": "fil",
   "segments": [
     {
@@ -76,10 +78,10 @@ The user's provided images and video clips are a **creative palette**, not a req
 
 ### Phase A — Intake and planning (no scene implementation yet)
 
-1. Read this file and `SONG_BRIEF.md` first.
+1. Read this file and `songs/<song>/SONG_BRIEF.md` first.
 2. Inspect MP3 duration, lyric JSON validity, assets, aspect ratio and existing Remotion project structure.
 3. Optionally measure audio beats and verify timestamp alignment; if word-level timing is already reliable, skip expensive transcription/separation.
-4. Prepare a `SCENE_PLAN.md` covering the full song by lyric phrases: mood arc, key visual accents, intended asset usage, and major transitions. Use the supplied reference to infer design language, not to copy shots verbatim.
+4. Prepare `songs/<song>/SCENE_PLAN.md` covering the full song by lyric phrases: mood arc, key visual accents, intended asset usage, and major transitions. Use the supplied reference to infer design language, not to copy shots verbatim.
 5. Ask for confirmation on the first segment's treatment if needed.
 
 ### Phase B — Incremental production
@@ -135,7 +137,7 @@ Prioritize artistic direction, smooth motion, strong composition, and polished a
 
 ## 9. Established house style (default for every new song in this folder)
 
-This folder is the primary workspace for lyric videos. Section 9 records the style the user approved on the "Real" video (`src/v3/`, render `out/v3d-landscape.mp4`). **Where section 9 conflicts with sections 1–8, section 9 wins.** Start new songs from it; vary scene content, not the system.
+This folder is the primary workspace for lyric videos. Section 9 records the style the user approved on the "BE REAL" video (`songs/be-real/src/`, render `songs/be-real/out/v3d-landscape.mp4`). **Where section 9 conflicts with sections 1–8, section 9 wins.** Start new songs from it; vary scene content, not the system.
 
 ### 9.1 What the user wants (and rejected)
 
@@ -152,8 +154,8 @@ This folder is the primary workspace for lyric videos. Section 9 records the sty
 
 ### 9.3 Type system (the "one scale" rule)
 
-- `BODY` 96px (Segoe UI Semibold) for ordinary words; `HERO` 180px (Segoe UI Black, extruded 3D) for the one key word of each line (two at most). Defined in `src/v2/tokens.ts`; per-line hero indexes in `HERO_KEYS`.
-- Text inside phone/notification UI uses its own two sizes: `UI` 52 and `UIHERO` 96 (`src/v3/kit.tsx`).
+- `BODY` 96px (Segoe UI Semibold) for ordinary words; `HERO` 180px (Segoe UI Black, extruded 3D) for the one key word of each line (two at most). Defined in `src/tokens.ts` of the song folder; per-line hero indexes in `HERO_KEYS`.
+- Text inside phone/notification UI uses its own two sizes: `UI` 52 and `UIHERO` 96 (`kit.tsx` in the song folder).
 - One exception per song: the finale hero (`FIN_HERO` 300). Do not add more.
 - Line layout: body words above, hero word, body words after. Put a line on **two rows at most**; join a trailing short word to the row above instead of wrapping (e.g. "...nagbago sa" / "kamalayan"). In cards and bubbles the hero and its trailing words share a row.
 - Centre the text block when nothing else shares the frame (the opening stage), so there is no dead strip on one side. Use left-aligned text only when the neighbouring line, a meme or a phone fills the other side.
@@ -165,8 +167,8 @@ This folder is the primary workspace for lyric videos. Section 9 records the sty
 ### 9.5 Motion rules
 
 - **Word entrance** is always the same: slide up ~26px, blur-in, fade, on the aligned onset (`Wd`, `HeroX`). Hero words swing in on Y with a depth push, then sway and open their tracking while sustained.
-- **Scene transitions are camera moves, never plain cuts or fades**: push-through, flip off to one side with the next scene entering from the other, phone rising from below, flying through a plane. Use `Stage` in `src/v3/kit.tsx` (`left`, `right`, `rise`, `through`, `deep`). Start a transition in the pause or over a sustained note, never over a word still being sung.
-- **Presentation modes** (pick a different one for each section of the song; reuse the code in `src/v3/`):
+- **Scene transitions are camera moves, never plain cuts or fades**: push-through, flip off to one side with the next scene entering from the other, phone rising from below, flying through a plane. Use `Stage` in `kit.tsx` (`left`, `right`, `rise`, `through`, `deep`). Start a transition in the pause or over a sustained note, never over a word still being sung.
+- **Presentation modes** (pick a different one for each section of the song; reuse the code in `songs/be-real/src/`):
   - open stage: centred lines, spotlight that searches then locks on a key word, glitch/strike on a "false" word;
   - Messenger-style chat on a slanted 3D phone: each line becomes a sent bubble built word by word; header, "Today" stamp, compose bar, seen avatar, emoji reactions;
   - carousel: lines on a rotating wheel, the wheel turns to each line, the next line is a dim preview on the right (fast/rap sections);
@@ -175,24 +177,24 @@ This folder is the primary workspace for lyric videos. Section 9 records the sty
   - finale: one giant extruded 3D hero, slow orbit, a small "sent" tag closing the chat motif.
 - **Chat/phone is one scene, not an overlay.** Lyrics live only inside the phone while it is on screen. Never add lyrics that are not in the JSON; emoji, "Seen", typing dots, timestamps and header text are allowed as UI.
 - **Background (always on, additive, low contrast)**: accent glow, drifting soft orbs, slowly rotating dashed rings, rising dust, an occasional light sweep, drifting dot grid, small beat pulse from the instrumental stem. Add layers; do not replace them.
-- **Beat data** (`src/lyrics/beats.ts`, `pulse()`) drives only subtle pulses, never lyric timing.
+- **Beat data** (`beats.ts`, `pulse()`) drives only subtle pulses, never lyric timing.
 - 3D rules: use `perspective` + `preserve-3d` + stacked `translateZ` layers for extrusion. Opacity/filter/overflow on a parent flatten its 3D children, so apply opacity per element and keep the 3D group un-faded. Hide not-yet-sung words with `visibility`/opacity (not unmounting) so layout never jumps, except bubbles/cards that should grow as sung (`OnlyOn`).
 
 ### 9.6 External images (memes, photos)
 
-- Only use images the user supplies from `assets/`; copy them to `public/`. Never download or invent assets. If one is low resolution, say so.
+- Only use images the user supplies in `songs/<song>/assets/`; import them from there (no copy into `public/`). Never download or invent assets. If one is low resolution, say so.
 - A meme must look like it **belongs to the video**: place it on the empty side of the line it reacts to, in the same plane as the text so it travels with the camera, pop it in on the hero word's onset with the same spring, rounded corners, white border, glow in the accent family, slight tilt and bob, and the small seen-avatar from the chat motif (`MemeCard`). Size about 620px, vertically centred in the frame.
 
 ### 9.7 Data and timing rules (unchanged, repeated because they matter)
 
-- `assets/<song>_lyrics_aligned.json` is edited by hand by the user: **read-only**. Import it directly (`src/lyrics/data.ts`); never rewrite or "fix" it. Report timing conflicts (overlaps, line start/end differing from word times, 0.02 s words) instead of silently fixing them.
+- `assets/<song>_lyrics_aligned.json` is edited by hand by the user: **read-only**. Import it directly (`data.ts` in the song folder); never rewrite or "fix" it. Report timing conflicts (overlaps, line start/end differing from word times, 0.02 s words) instead of silently fixing them.
 - Display windows are derived from word times only (`showFrom`/`showTo`).
 - Do not claim visual verification unless rendered frames were actually inspected. Motion/audio sync can only be confirmed by the user watching; say so.
 
 ### 9.8 Working agreement
 
 - The user usually gives feedback as Taglish, scene by scene ("sa line na ..."). Make **targeted** revisions; do not redo approved scenes.
-- Never overwrite earlier renders: write each revision to a new file (`out/<song>-v3.mp4`, then `v3b`, `v3c`, ...). Render stills to `out/<name>q/` for inspection before the full render.
+- Never overwrite earlier renders: write each revision to a new file (`songs/<song>/out/<song>-v1.mp4`, then `v1b`, `v1c`, ...). Render stills to `songs/<song>/out/stills/` for inspection before the full render.
 - Wait for approval before a *big redesign*. Small requested adjustments can be applied and rendered immediately.
 - Final report: file path, what changed, what was verified (stills only vs. watched), limitations (fonts, low-res images, JSON conflicts), in short Taglish.
 
@@ -200,5 +202,27 @@ This folder is the primary workspace for lyric videos. Section 9 records the sty
 
 1. Read this guide, the song brief and the aligned JSON; list lyric lines with times.
 2. Write a one-paragraph through-line, then assign a presentation mode per section (9.5) and a hero word per line (`HERO_KEYS`). Share it before building if the song is very different from "Real".
-3. Copy the pattern in `src/v3/` (`kit.tsx`, `SceneA/B/C.tsx`, `LyricV3.tsx`) and register a new composition in `src/Root.tsx`.
+3. Copy `songs/be-real/` to `songs/<new-song>/` (see 9.10), clear `assets/`, `out/` and `archive/`, then rework the scenes. Register the new composition in the root `src/Root.tsx`.
 4. Check for 2-row lines, centre vs. left alignment, empty sides (fill with a supplied meme or neighbour preview), then render stills, then the full video.
+
+### 9.10 Folder structure (one folder per song)
+
+Everything that belongs to a song lives in `songs/<song-name>/`: code, assets and renders. The folder name is the song title in kebab-case (the last song is `songs/be-real/`).
+
+```
+songs/<song-name>/
+  assets/        audio, <song>_lyrics_aligned.json (read-only), template, memes, reference video
+  src/           the video code (BeReal.tsx, kit.tsx, SceneA/B/C.tsx, data.ts, tokens.ts, Hero.tsx, motion.ts, beat.ts, beats.ts)
+  out/           final renders; stills/ for QA frames
+  archive/       superseded attempts (not compiled)
+  SCENE_PLAN.md  the plan for this song
+  SONG_BRIEF.md  optional song-specific brief
+```
+
+Outside the song folders only project-wide things remain: `LYRIC_VIDEO_STYLE_GUIDE.md`, `src/index.ts`, `src/Root.tsx` (one `<Composition>` per song), `src/assets.d.ts`, `tools/` (helper prompts), `package.json`, `tsconfig.json`, `remotion.config.ts`.
+
+Rules:
+- Audio and images are **imported from the song's `assets/`** (`import song from "../assets/<file>.m4a"`), not through `public/`. There is no root `public/` or `assets/`.
+- A song's code does not import from another song. To start a new song, copy the whole folder, then replace assets and rework `HERO_KEYS`, scene timings and stage windows.
+- Renders go to `songs/<song>/out/`, never to a root `out/`.
+- Checks: `npm run lint` (eslint + tsc over `src` and `songs/*/src`).

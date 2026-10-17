@@ -1,8 +1,8 @@
 import React from "react";
 import { AbsoluteFill } from "remotion";
-import { lines, Word } from "../lyrics/data";
-import { clamp01, easeInOut, easeOut, useOnset, useT } from "../lyrics/motion";
-import { accentAt, BODY, FONT_BODY, HERO_KEYS, INK } from "../v2/tokens";
+import { lines, Word } from "./data";
+import { clamp01, easeInOut, easeOut, useOnset, useT } from "./motion";
+import { accentAt, BODY, FONT_BODY, HERO_KEYS, INK } from "./tokens";
 import { FIN_HERO, HeroX, OnlyOn, sum, UI, UIHERO, win } from "./kit";
 
 const FONT = '"Segoe UI", "Segoe UI Emoji", Arial, sans-serif';

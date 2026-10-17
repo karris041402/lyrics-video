@@ -26,7 +26,8 @@
     "dev": "remotion studio",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src songs && tsc",
+    "render:be-real": "remotion render src/index.ts BeReal songs/be-real/out/be-real.mp4"
   },
   "allowScripts": {
     "esbuild": false

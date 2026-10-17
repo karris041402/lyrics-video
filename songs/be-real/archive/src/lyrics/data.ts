@@ -1,4 +1,4 @@
-import raw from "../../assets/real_lyrics_aligned.json";
+import raw from "../../../assets/real_lyrics_aligned.json";
 import { Palette } from "./theme";
 
 export type Word = { word: string; start: number; end: number };
