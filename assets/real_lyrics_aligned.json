@@ -1,0 +1,977 @@
+{
+  "schema_version": "1.0",
+  "title": "Real",
+  "audio_file": "real_IBALsS5z.m4a",
+  "audio_duration_seconds": 57.21,
+  "timestamp_unit": "seconds",
+  "timestamp_status": "aligned_needs_review",
+  "note": "Forced alignment: Demucs htdemucs vocal stem + stable-ts (Whisper large-v3, language=tl) align() against supplied lyrics. Confidence = Whisper word probability. Lines with needs_review=true need manual check.",
+  "lyrics": [
+    {
+      "id": "line-001",
+      "section": "hook",
+      "start": 0.73,
+      "end": 3.1,
+      "text": "ano man ang marating",
+      "words": [
+        {
+          "word": "ano",
+          "start": 0.73,
+          "end": 1.01,
+          "confidence": 0.0
+        },
+        {
+          "word": "man",
+          "start": 1.01,
+          "end": 1.22,
+          "confidence": 0.9
+        },
+        {
+          "word": "ang",
+          "start": 1.22,
+          "end": 1.36,
+          "confidence": 0.44
+        },
+        {
+          "word": "marating",
+          "start": 1.36,
+          "end": 3.57,
+          "confidence": 0.44
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["low avg conf 0.44", "word min conf 0.00", "word <60ms"],
+      "avg_confidence": 0.44
+    },
+    {
+      "id": "line-002",
+      "section": "hook",
+      "start": 3.57,
+      "end": 4.74,
+      "text": "lagi lang ako na same",
+      "words": [
+        {
+          "word": "lagi",
+          "start": 3.57,
+          "end": 3.88,
+          "confidence": 0.38
+        },
+        {
+          "word": "lang",
+          "start": 3.88,
+          "end": 3.98,
+          "confidence": 0.94
+        },
+        {
+          "word": "ako",
+          "start": 3.98,
+          "end": 4.2,
+          "confidence": 0.94
+        },
+        {
+          "word": "na",
+          "start": 4.2,
+          "end": 4.4,
+          "confidence": 0.08
+        },
+        {
+          "word": "same",
+          "start": 4.4,
+          "end": 6.13,
+          "confidence": 0.24
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["word min conf 0.08", "word >1.5s"],
+      "avg_confidence": 0.52
+    },
+    {
+      "id": "line-003",
+      "section": "hook",
+      "start": 6.13,
+      "end": 8.83,
+      "text": "kung walang nakatingin",
+      "words": [
+        {
+          "word": "kung",
+          "start": 6.13,
+          "end": 6.3,
+          "confidence": 0.8
+        },
+        {
+          "word": "walang",
+          "start": 6.3,
+          "end": 6.62,
+          "confidence": 0.96
+        },
+        {
+          "word": "nakatingin",
+          "start": 6.62,
+          "end": 8.83,
+          "confidence": 0.97
+        }
+      ],
+      "needs_review": false,
+      "review_notes": [],
+      "avg_confidence": 0.91
+    },
+    {
+      "id": "line-004",
+      "section": "hook",
+      "start": 8.83,
+      "end": 11.38,
+      "text": "di pa rin magiging fake",
+      "words": [
+        {
+          "word": "di",
+          "start": 8.83,
+          "end": 8.86,
+          "confidence": 0.63
+        },
+        {
+          "word": "pa",
+          "start": 8.86,
+          "end": 9.0,
+          "confidence": 0.51
+        },
+        {
+          "word": "rin",
+          "start": 9.0,
+          "end": 9.3,
+          "confidence": 0.96
+        },
+        {
+          "word": "magiging",
+          "start": 9.3,
+          "end": 9.72,
+          "confidence": 0.99
+        },
+        {
+          "word": "fake",
+          "start": 9.72,
+          "end": 11.38,
+          "confidence": 0.35
+        }
+      ],
+      "needs_review": false,
+      "review_notes": [],
+      "avg_confidence": 0.68
+    },
+    {
+      "id": "line-005",
+      "section": "hook",
+      "start": 11.38,
+      "end": 14.15,
+      "text": "ano man ang marating",
+      "words": [
+        {
+          "word": "ano",
+          "start": 11.38,
+          "end": 11.62,
+          "confidence": 0.83
+        },
+        {
+          "word": "man",
+          "start": 11.62,
+          "end": 11.88,
+          "confidence": 0.98
+        },
+        {
+          "word": "ang",
+          "start": 11.88,
+          "end": 12.02,
+          "confidence": 1.0
+        },
+        {
+          "word": "marating",
+          "start": 12.02,
+          "end": 14.15,
+          "confidence": 0.99
+        }
+      ],
+      "needs_review": false,
+      "review_notes": [],
+      "avg_confidence": 0.95
+    },
+    {
+      "id": "line-006",
+      "section": "hook",
+      "start": 14.15,
+      "end": 16.63,
+      "text": "lagi lang ako na same",
+      "words": [
+        {
+          "word": "lagi",
+          "start": 14.15,
+          "end": 14.26,
+          "confidence": 1.0
+        },
+        {
+          "word": "lang",
+          "start": 14.26,
+          "end": 14.52,
+          "confidence": 1.0
+        },
+        {
+          "word": "ako",
+          "start": 14.52,
+          "end": 14.8,
+          "confidence": 1.0
+        },
+        {
+          "word": "na",
+          "start": 14.8,
+          "end": 15.0,
+          "confidence": 1.0
+        },
+        {
+          "word": "same",
+          "start": 15.0,
+          "end": 16.63,
+          "confidence": 1.0
+        }
+      ],
+      "needs_review": false,
+      "review_notes": [],
+      "avg_confidence": 1.0
+    },
+    {
+      "id": "line-007",
+      "section": "hook",
+      "start": 16.63,
+      "end": 19.4,
+      "text": "kung walang nakatingin",
+      "words": [
+        {
+          "word": "kung",
+          "start": 16.63,
+          "end": 16.78,
+          "confidence": 0.97
+        },
+        {
+          "word": "walang",
+          "start": 16.78,
+          "end": 17.18,
+          "confidence": 1.0
+        },
+        {
+          "word": "nakatingin",
+          "start": 17.18,
+          "end": 19.4,
+          "confidence": 1.0
+        }
+      ],
+      "needs_review": false,
+      "review_notes": [],
+      "avg_confidence": 0.99
+    },
+    {
+      "id": "line-008",
+      "section": "hook",
+      "start": 19.4,
+      "end": 21.7,
+      "text": "di pa rin magiging fake",
+      "words": [
+        {
+          "word": "di",
+          "start": 19.4,
+          "end": 19.46,
+          "confidence": 1.0
+        },
+        {
+          "word": "pa",
+          "start": 19.46,
+          "end": 19.62,
+          "confidence": 1.0
+        },
+        {
+          "word": "rin",
+          "start": 19.62,
+          "end": 19.88,
+          "confidence": 1.0
+        },
+        {
+          "word": "magiging",
+          "start": 19.88,
+          "end": 20.24,
+          "confidence": 1.0
+        },
+        {
+          "word": "fake",
+          "start": 20.24,
+          "end": 21.7,
+          "confidence": 1.0
+        }
+      ],
+      "needs_review": false,
+      "review_notes": [],
+      "avg_confidence": 1.0
+    },
+    {
+      "id": "line-009",
+      "section": "verse",
+      "start": 22.08,
+      "end": 25.08,
+      "text": "dami na rin ang nagbago sa kamalayan",
+      "words": [
+        {
+          "word": "dami",
+          "start": 22.08,
+          "end": 22.4,
+          "confidence": 0.67
+        },
+        {
+          "word": "na",
+          "start": 22.4,
+          "end": 22.42,
+          "confidence": 0.73
+        },
+        {
+          "word": "rin",
+          "start": 22.42,
+          "end": 22.74,
+          "confidence": 0.99
+        },
+        {
+          "word": "ang",
+          "start": 22.74,
+          "end": 22.86,
+          "confidence": 0.79
+        },
+        {
+          "word": "nagbago",
+          "start": 22.86,
+          "end": 23.48,
+          "confidence": 0.26
+        },
+        {
+          "word": "sa",
+          "start": 23.48,
+          "end": 23.74,
+          "confidence": 0.98
+        },
+        {
+          "word": "kamalayan",
+          "start": 23.74,
+          "end": 25.08,
+          "confidence": 0.81
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["word <60ms"],
+      "avg_confidence": 0.75
+    },
+    {
+      "id": "line-010",
+      "section": "verse",
+      "start": 25.08,
+      "end": 27.7,
+      "text": "dami ring hinagod sa kaalaman",
+      "words": [
+        {
+          "word": "dami",
+          "start": 25.08,
+          "end": 25.32,
+          "confidence": 0.99
+        },
+        {
+          "word": "ring",
+          "start": 25.32,
+          "end": 25.52,
+          "confidence": 0.08
+        },
+        {
+          "word": "hinagod",
+          "start": 25.52,
+          "end": 26.26,
+          "confidence": 0.58
+        },
+        {
+          "word": "sa",
+          "start": 26.26,
+          "end": 26.44,
+          "confidence": 1.0
+        },
+        {
+          "word": "kaalaman",
+          "start": 26.44,
+          "end": 27.7,
+          "confidence": 0.65
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["word min conf 0.08"],
+      "avg_confidence": 0.66
+    },
+    {
+      "id": "line-011",
+      "section": "verse",
+      "start": 27.7,
+      "end": 28.82,
+      "text": "sabi ko sa akin",
+      "words": [
+        {
+          "word": "sabi",
+          "start": 27.48,
+          "end": 27.98,
+          "confidence": 0.98
+        },
+        {
+          "word": "ko",
+          "start": 27.98,
+          "end": 28.04,
+          "confidence": 1.0
+        },
+        {
+          "word": "sa",
+          "start": 28.04,
+          "end": 28.24,
+          "confidence": 0.99
+        },
+        {
+          "word": "akin",
+          "start": 28.24,
+          "end": 28.82,
+          "confidence": 0.97
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["word <60ms"],
+      "avg_confidence": 0.98
+    },
+    {
+      "id": "line-012",
+      "section": "verse",
+      "start": 28.86,
+      "end": 30.23,
+      "text": "anu man ang mangyare",
+      "words": [
+        {
+          "word": "anu",
+          "start": 28.86,
+          "end": 29.12,
+          "confidence": 0.06
+        },
+        {
+          "word": "man",
+          "start": 29.12,
+          "end": 29.3,
+          "confidence": 0.92
+        },
+        {
+          "word": "ang",
+          "start": 29.3,
+          "end": 29.48,
+          "confidence": 0.27
+        },
+        {
+          "word": "mangyare",
+          "start": 29.48,
+          "end": 30.23,
+          "confidence": 0.64
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["low avg conf 0.47", "word min conf 0.06"],
+      "avg_confidence": 0.47
+    },
+    {
+      "id": "line-013",
+      "section": "verse",
+      "start": 30.23,
+      "end": 31.38,
+      "text": "wag ka magiging peke",
+      "words": [
+        {
+          "word": "wag",
+          "start": 30.23,
+          "end": 30.28,
+          "confidence": 0.01
+        },
+        {
+          "word": "ka",
+          "start": 30.28,
+          "end": 30.44,
+          "confidence": 0.09
+        },
+        {
+          "word": "magiging",
+          "start": 30.44,
+          "end": 30.98,
+          "confidence": 0.98
+        },
+        {
+          "word": "peke",
+          "start": 30.98,
+          "end": 31.38,
+          "confidence": 0.74
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["low avg conf 0.46", "word min conf 0.01"],
+      "avg_confidence": 0.46
+    },
+    {
+      "id": "line-014",
+      "section": "verse",
+      "start": 31.48,
+      "end": 32.77,
+      "text": "maging totoo lang",
+      "words": [
+        {
+          "word": "maging",
+          "start": 31.48,
+          "end": 31.8,
+          "confidence": 0.25
+        },
+        {
+          "word": "totoo",
+          "start": 31.8,
+          "end": 32.2,
+          "confidence": 0.99
+        },
+        {
+          "word": "lang",
+          "start": 32.2,
+          "end": 32.77,
+          "confidence": 0.98
+        }
+      ],
+      "needs_review": false,
+      "review_notes": [],
+      "avg_confidence": 0.74
+    },
+    {
+      "id": "line-015",
+      "section": "verse",
+      "start": 33.07,
+      "end": 35.67,
+      "text": "kahit ano pa man ang magiging takbo",
+      "words": [
+        {
+          "word": "kahit",
+          "start": 33.07,
+          "end": 33.34,
+          "confidence": 0.59
+        },
+        {
+          "word": "ano",
+          "start": 33.34,
+          "end": 33.54,
+          "confidence": 0.92
+        },
+        {
+          "word": "pa",
+          "start": 33.54,
+          "end": 33.72,
+          "confidence": 0.97
+        },
+        {
+          "word": "man",
+          "start": 33.72,
+          "end": 34.0,
+          "confidence": 0.49
+        },
+        {
+          "word": "ang",
+          "start": 34.0,
+          "end": 34.12,
+          "confidence": 0.15
+        },
+        {
+          "word": "magiging",
+          "start": 34.12,
+          "end": 34.64,
+          "confidence": 0.99
+        },
+        {
+          "word": "takbo",
+          "start": 34.64,
+          "end": 35.67,
+          "confidence": 0.89
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["word min conf 0.15"],
+      "avg_confidence": 0.71
+    },
+    {
+      "id": "line-016",
+      "section": "verse",
+      "start": 35.67,
+      "end": 38.03,
+      "text": "ng buhay basta galingan mo",
+      "words": [
+        {
+          "word": "ng",
+          "start": 35.67,
+          "end": 36.28,
+          "confidence": 0.68
+        },
+        {
+          "word": "buhay",
+          "start": 36.28,
+          "end": 36.62,
+          "confidence": 0.99
+        },
+        {
+          "word": "basta",
+          "start": 36.62,
+          "end": 36.9,
+          "confidence": 0.58
+        },
+        {
+          "word": "galingan",
+          "start": 36.9,
+          "end": 37.48,
+          "confidence": 0.9
+        },
+        {
+          "word": "mo",
+          "start": 37.48,
+          "end": 38.03,
+          "confidence": 1.0
+        }
+      ],
+      "needs_review": false,
+      "review_notes": [],
+      "avg_confidence": 0.83
+    },
+    {
+      "id": "line-017",
+      "section": "verse",
+      "start": 38.36,
+      "end": 40.67,
+      "text": "laging umabante lang at tapatan mo",
+      "words": [
+        {
+          "word": "laging",
+          "start": 38.36,
+          "end": 38.62,
+          "confidence": 0.73
+        },
+        {
+          "word": "umabante",
+          "start": 38.62,
+          "end": 39.18,
+          "confidence": 0.51
+        },
+        {
+          "word": "lang",
+          "start": 39.18,
+          "end": 39.42,
+          "confidence": 0.94
+        },
+        {
+          "word": "at",
+          "start": 39.42,
+          "end": 39.6,
+          "confidence": 0.57
+        },
+        {
+          "word": "tapatan",
+          "start": 39.6,
+          "end": 40.27,
+          "confidence": 0.48
+        },
+        {
+          "word": "mo",
+          "start": 40.27,
+          "end": 40.67,
+          "confidence": 1.0
+        }
+      ],
+      "needs_review": false,
+      "review_notes": [],
+      "avg_confidence": 0.71
+    },
+    {
+      "id": "line-018",
+      "section": "verse",
+      "start": 40.67,
+      "end": 43.3,
+      "text": "ng pagiging totoo mo sa lahat ng to",
+      "words": [
+        {
+          "word": "ng",
+          "start": 40.6,
+          "end": 40.72,
+          "confidence": 0.85
+        },
+        {
+          "word": "pagiging",
+          "start": 40.72,
+          "end": 41.3,
+          "confidence": 0.99
+        },
+        {
+          "word": "totoo",
+          "start": 41.3,
+          "end": 41.7,
+          "confidence": 1.0
+        },
+        {
+          "word": "mo",
+          "start": 41.7,
+          "end": 41.86,
+          "confidence": 0.99
+        },
+        {
+          "word": "sa",
+          "start": 41.86,
+          "end": 42.04,
+          "confidence": 0.98
+        },
+        {
+          "word": "lahat",
+          "start": 42.04,
+          "end": 42.54,
+          "confidence": 1.0
+        },
+        {
+          "word": "ng",
+          "start": 42.54,
+          "end": 43.0,
+          "confidence": 0.09
+        },
+        {
+          "word": "to",
+          "start": 43.0,
+          "end": 43.2,
+          "confidence": 0.51
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["word min conf 0.09"],
+      "avg_confidence": 0.8
+    },
+    {
+      "id": "line-019",
+      "section": "verse",
+      "start": 43.2,
+      "end": 45.27,
+      "text": "kung ganiyan ka, uh",
+      "words": [
+        {
+          "word": "kung",
+          "start": 43.2,
+          "end": 43.42,
+          "confidence": 0.55
+        },
+        {
+          "word": "ganiyan",
+          "start": 43.42,
+          "end": 44.1,
+          "confidence": 0.64
+        },
+        {
+          "word": "ka,",
+          "start": 44.1,
+          "end": 44.93,
+          "confidence": 0.56
+        },
+        {
+          "word": "uh",
+          "start": 44.93,
+          "end": 45.27,
+          "confidence": 0.03
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["low avg conf 0.45", "word min conf 0.03"],
+      "avg_confidence": 0.45
+    },
+    {
+      "id": "line-020",
+      "section": "verse",
+      "start": 45.57,
+      "end": 48.17,
+      "text": "di mo na kailangan na isipin pa",
+      "words": [
+        {
+          "word": "di",
+          "start": 45.57,
+          "end": 45.68,
+          "confidence": 0.2
+        },
+        {
+          "word": "mo",
+          "start": 45.68,
+          "end": 45.8,
+          "confidence": 0.0
+        },
+        {
+          "word": "na",
+          "start": 45.8,
+          "end": 46.0,
+          "confidence": 0.48
+        },
+        {
+          "word": "kailangan",
+          "start": 46.0,
+          "end": 46.5,
+          "confidence": 0.96
+        },
+        {
+          "word": "na",
+          "start": 46.5,
+          "end": 46.68,
+          "confidence": 0.14
+        },
+        {
+          "word": "isipin",
+          "start": 46.68,
+          "end": 47.42,
+          "confidence": 0.81
+        },
+        {
+          "word": "pa",
+          "start": 47.42,
+          "end": 48.17,
+          "confidence": 0.71
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["low avg conf 0.47", "word min conf 0.00"],
+      "avg_confidence": 0.47
+    },
+    {
+      "id": "line-021",
+      "section": "verse",
+      "start": 48.17,
+      "end": 50.38,
+      "text": "ung mga tao kung may masasabi ba",
+      "words": [
+        {
+          "word": "ung",
+          "start": 48.17,
+          "end": 48.18,
+          "confidence": 0.0
+        },
+        {
+          "word": "mga",
+          "start": 48.18,
+          "end": 48.46,
+          "confidence": 0.89
+        },
+        {
+          "word": "tao",
+          "start": 48.46,
+          "end": 48.78,
+          "confidence": 0.94
+        },
+        {
+          "word": "kung",
+          "start": 48.78,
+          "end": 49.02,
+          "confidence": 0.87
+        },
+        {
+          "word": "may",
+          "start": 49.02,
+          "end": 49.2,
+          "confidence": 0.73
+        },
+        {
+          "word": "masasabi",
+          "start": 49.2,
+          "end": 50.25,
+          "confidence": 0.63
+        },
+        {
+          "word": "ba",
+          "start": 50.25,
+          "end": 50.57,
+          "confidence": 0.3
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["word min conf 0.00"],
+      "avg_confidence": 0.62
+    },
+    {
+      "id": "line-022",
+      "section": "verse",
+      "start": 50.73,
+      "end": 52.96,
+      "text": "mabuti masama man ay di bale na",
+      "words": [
+        {
+          "word": "mabuti",
+          "start": 50.73,
+          "end": 51.16,
+          "confidence": 0.78
+        },
+        {
+          "word": "masama",
+          "start": 51.16,
+          "end": 51.67,
+          "confidence": 0.61
+        },
+        {
+          "word": "man",
+          "start": 51.67,
+          "end": 51.88,
+          "confidence": 0.72
+        },
+        {
+          "word": "ay",
+          "start": 51.88,
+          "end": 52.04,
+          "confidence": 0.61
+        },
+        {
+          "word": "di",
+          "start": 52.04,
+          "end": 52.14,
+          "confidence": 0.12
+        },
+        {
+          "word": "bale",
+          "start": 52.14,
+          "end": 52.83,
+          "confidence": 0.8
+        },
+        {
+          "word": "na",
+          "start": 52.83,
+          "end": 53.28,
+          "confidence": 0.01
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["word min conf 0.01"],
+      "avg_confidence": 0.52
+    },
+    {
+      "id": "line-023",
+      "section": "verse",
+      "start": 53.28,
+      "end": 55.27,
+      "text": "basta tunay ka",
+      "words": [
+        {
+          "word": "basta",
+          "start": 53.28,
+          "end": 53.44,
+          "confidence": 0.02
+        },
+        {
+          "word": "tunay",
+          "start": 53.44,
+          "end": 54.17,
+          "confidence": 0.48
+        },
+        {
+          "word": "ka",
+          "start": 54.17,
+          "end": 55.27,
+          "confidence": 0.97
+        }
+      ],
+      "needs_review": true,
+      "review_notes": ["low avg conf 0.49", "word min conf 0.02"],
+      "avg_confidence": 0.49
+    }
+  ]
+}

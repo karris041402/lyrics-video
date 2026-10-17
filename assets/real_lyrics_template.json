@@ -1,0 +1,793 @@
+{
+  "schema_version": "1.0",
+  "title": "Real",
+  "audio_file": "real_IBALsS5z.m4a",
+  "audio_duration_seconds": 57.21,
+  "timestamp_unit": "seconds",
+  "timestamp_status": "not_aligned",
+  "note": "All timing fields must be filled by forced alignment and manually checked against sung audio. Do not infer timings from written line lengths or overall duration. Lyrics supplied by user; spelling kept substantially as supplied, removing hidden directional characters and double spaces.",
+  "lyrics": [
+    {
+      "id": "line-001",
+      "section": "hook",
+      "start": null,
+      "end": null,
+      "text": "ano man ang marating",
+      "words": [
+        {
+          "word": "ano",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "man",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ang",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "marating",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-002",
+      "section": "hook",
+      "start": null,
+      "end": null,
+      "text": "lagi lang ako na same",
+      "words": [
+        {
+          "word": "lagi",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "lang",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ako",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "na",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "same",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-003",
+      "section": "hook",
+      "start": null,
+      "end": null,
+      "text": "kung walang nakatingin",
+      "words": [
+        {
+          "word": "kung",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "walang",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "nakatingin",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-004",
+      "section": "hook",
+      "start": null,
+      "end": null,
+      "text": "di pa rin magiging fake",
+      "words": [
+        {
+          "word": "di",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "pa",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "rin",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "magiging",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "fake",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-005",
+      "section": "hook",
+      "start": null,
+      "end": null,
+      "text": "ano man ang marating",
+      "words": [
+        {
+          "word": "ano",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "man",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ang",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "marating",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-006",
+      "section": "hook",
+      "start": null,
+      "end": null,
+      "text": "lagi lang ako na same",
+      "words": [
+        {
+          "word": "lagi",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "lang",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ako",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "na",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "same",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-007",
+      "section": "hook",
+      "start": null,
+      "end": null,
+      "text": "kung walang nakatingin",
+      "words": [
+        {
+          "word": "kung",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "walang",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "nakatingin",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-008",
+      "section": "hook",
+      "start": null,
+      "end": null,
+      "text": "di pa rin magiging fake",
+      "words": [
+        {
+          "word": "di",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "pa",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "rin",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "magiging",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "fake",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-009",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "dami na rin ang nagbago sa kamalayan",
+      "words": [
+        {
+          "word": "dami",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "na",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "rin",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ang",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "nagbago",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "sa",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "kamalayan",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-010",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "dami ring hinagod sa kaalaman",
+      "words": [
+        {
+          "word": "dami",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ring",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "hinagod",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "sa",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "kaalaman",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-011",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "sabi ko sa akin",
+      "words": [
+        {
+          "word": "sabi",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ko",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "sa",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "akin",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-012",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "anu man ang mangyare",
+      "words": [
+        {
+          "word": "anu",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "man",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ang",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "mangyare",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-013",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "wag ka magiging peke",
+      "words": [
+        {
+          "word": "wag",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ka",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "magiging",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "peke",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-014",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "maging totoo lang",
+      "words": [
+        {
+          "word": "maging",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "totoo",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "lang",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-015",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "kahit ano pa man ang magiging takbo",
+      "words": [
+        {
+          "word": "kahit",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ano",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "pa",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "man",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ang",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "magiging",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "takbo",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-016",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "ng buhay basta galingan mo",
+      "words": [
+        {
+          "word": "ng",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "buhay",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "basta",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "galingan",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "mo",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-017",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "laging umabante lang at tapatan mo",
+      "words": [
+        {
+          "word": "laging",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "umabante",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "lang",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "at",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "tapatan",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "mo",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-018",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "ng pagiging totoo mo sa lahat ng to",
+      "words": [
+        {
+          "word": "ng",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "pagiging",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "totoo",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "mo",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "sa",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "lahat",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ng",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "to",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-019",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "kung ganiyan ka, uh",
+      "words": [
+        {
+          "word": "kung",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ganiyan",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ka,",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "uh",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-020",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "di mo na kailangan na isipin pa",
+      "words": [
+        {
+          "word": "di",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "mo",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "na",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "kailangan",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "na",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "isipin",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "pa",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-021",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "ung mga tao kung may masasabi ba",
+      "words": [
+        {
+          "word": "ung",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "mga",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "tao",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "kung",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "may",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "masasabi",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ba",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-022",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "mabuti masama man ay di bale na",
+      "words": [
+        {
+          "word": "mabuti",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "masama",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "man",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ay",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "di",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "bale",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "na",
+          "start": null,
+          "end": null
+        }
+      ]
+    },
+    {
+      "id": "line-023",
+      "section": "verse",
+      "start": null,
+      "end": null,
+      "text": "basta tunay ka",
+      "words": [
+        {
+          "word": "basta",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "tunay",
+          "start": null,
+          "end": null
+        },
+        {
+          "word": "ka",
+          "start": null,
+          "end": null
+        }
+      ]
+    }
+  ]
+}
